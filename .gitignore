@@ -1,1 +1,4 @@
-.history
+.history/
+.vscode/
+
+/node_modules
