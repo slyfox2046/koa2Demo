@@ -1,13 +1,19 @@
-const koa = require('koa')
+const koa = require('koa');
 const app = new koa();
-app.use(async ctx => { 
-  ctx.response.body = {
-    url: ctx.request.url,
-    query: ctx.request.query,
-    querystring :ctx.request.querystring
+app.use(async ctx => {
+  ctx.response.status = 200;
+  if (ctx.request.accepts('json')) {
+    ctx.response.type = 'json';
+    ctx.response.body = { data: 'Hello world' };
+  } else if (ctx.request.accepts('html')) {
+    ctx.response.type = 'html';
+    ctx.respond.body = '<p>Hello World</p>';
+  } else {
+    ctx.response.type = 'text';
+    ctx.response.body = 'Hello world';
   }
-})
 
-app.listen(3000, () => console.log("3000 is running!"));
+  // ctx.response.redirect('http://www.baidu.com');
+});
 
-// http://localhost:3000/?search=koa&keywords=context
+app.listen(3000, () => console.log('3000 is running!'));
