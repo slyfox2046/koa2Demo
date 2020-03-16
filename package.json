@@ -1,0 +1,19 @@
+{
+  "name": "koa2demo",
+  "version": "1.0.0",
+  "description": "《Koa与Node.js开发实战》练习\r 代码：https://github.com/ikcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slyfox2046/koa2Demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slyfox2046/koa2Demo/issues"
+  },
+  "homepage": "https://github.com/slyfox2046/koa2Demo#readme"
+}
