@@ -29,6 +29,7 @@ router
     }
   })
   .get('/api/userInfo', jwt, async ctx => {
+    console.log(ctx.state);
     ctx.body = {
       username: ctx.state.user.username,
     };
