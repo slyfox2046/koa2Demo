@@ -11,3 +11,13 @@
 [2020-03-19T17:14:20.127] [ERROR] cheese - Cheese is too ripe!
 [2020-03-19T17:14:20.127] [FATAL] cheese - Cheese was breeding ground for listeria.
 [2020-03-19T17:14:53.007] [INFO] cheese - 响应时间为0.011s
+[2020-03-19T20:09:52.461] [ERROR] cheese - 这个是logger中间件的测试！
+[2020-03-19T20:09:52.511] [INFO] cheese - 响应时间为0.069s
+[2020-03-19T20:09:53.558] [ERROR] cheese - 这个是logger中间件的测试！
+[2020-03-19T20:09:53.559] [INFO] cheese - 响应时间为0.004s
+[2020-03-19T20:09:57.885] [ERROR] cheese - 这个是logger中间件的测试！
+[2020-03-19T20:09:57.897] [INFO] cheese - 响应时间为0.015s
+[2020-03-19T20:10:05.571] [ERROR] cheese - 这个是logger中间件的测试！
+[2020-03-19T20:10:05.582] [INFO] cheese - 响应时间为0.013s
+[2020-03-19T20:10:43.099] [ERROR] cheese - 这个是logger中间件的测试！
+[2020-03-19T20:10:43.101] [INFO] cheese - 响应时间为0.003s
