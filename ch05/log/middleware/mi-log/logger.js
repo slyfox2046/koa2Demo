@@ -42,7 +42,7 @@ module.exports = options => {
     const start = +new Date();
     log4js.configure(config);
 
-    const logger = log4js.getLogger('cheese');
+    const logger = log4js.getLogger("CHEESE");
 
 
     methods.forEach((method, i) => {
