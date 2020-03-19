@@ -6,7 +6,7 @@ module.exports = () => {
   return async (ctx, next) => {
     ctx.send = render.bind(ctx);
     // console.log("mi-send");
-    ctx.log.error("这个是logger中间件的测试！")
+    // ctx.log.info("mi-send 设置json格式！")
     await next();
   };
 };
