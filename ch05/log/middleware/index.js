@@ -4,8 +4,8 @@ const nunjucks = require('koa-nunjucks-2');
 
 const staticFiles = require('koa-static');
 const miSend = require('./mi-send');
-
-module.exports =(app)  => {
+const miLog = require('./mi-log');
+module.exports = app => {
   app.use(staticFiles(path.resolve(__dirname, '../public')));
 
   app.use(
@@ -18,6 +18,8 @@ module.exports =(app)  => {
     }),
   );
 
+  app.use(miLog());
+  
   app.use(bodyParser());
 
   app.use(miSend());
