@@ -7,9 +7,9 @@ module.exports = {
   home: async(ctx, next) => {
     console.log(ctx.request.query)
     console.log(ctx.request.querystring)
-    // ctx.response.body = '<h1>HOME page</h1>'
+    ctx.response.body = '<h1>HOME page</h1>'
 
-    ctx.send({ status: "200" });
+    // ctx.send({ status: "200" });
 
   },
   homeParams: async(ctx, next) => {
@@ -22,11 +22,15 @@ module.exports = {
       btnName: 'GoGoGo'
     })
   },
-  register: async(ctx, next) => {
+  register: async (ctx, next) => {
+    // 解构出 app 实例对象
+    const { app } = ctx
     let params = ctx.request.body
     let name = params.name
     let password = params.password
-    let res = await HomeService.register(name,password)
+
+    // 留意 service 层的调用方式
+    let res = await app.service.home.register(name,password)
     if(res.status == "-1"){
       await ctx.render("home/login", res.data)
     }else{
