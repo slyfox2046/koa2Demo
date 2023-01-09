@@ -20,7 +20,7 @@
     "ip": "^1.1.5",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-jwt": "^3.6.0",
+    "koa-jwt": "^4.0.4",
     "koa-multer": "^1.0.2",
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^8.0.8",
